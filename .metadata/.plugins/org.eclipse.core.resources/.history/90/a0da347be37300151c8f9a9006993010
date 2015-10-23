@@ -1,0 +1,44 @@
+package Grade;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.ObjectOutputStream.PutField;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Readfile {
+	
+	ArrayList<String> list = new ArrayList<String>();
+	HashMap<String, Integer> map = new HashMap<String, Integer>();
+	String line ;
+	
+	public HashMap<String, Integer> Read() throws IOException {
+		
+		FileReader fr = new FileReader("/Users/eddie/Downloads/grade1.txt");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while ((line = br.readLine()) != null){
+			//System.out.print(br.readLine());
+			String[] Line = line.split(" ");
+			for (String studen : Line) {
+				String[] d = line.split(",");
+				map.put(d[0],Integer.valueOf(d[1]));
+			}
+			/*for (String studen : Line){
+				list.add(studen);
+				//System.out.println(list);
+			}
+			
+			for(int i = 0 ; i < 60 ; i=i+2){
+				int intValue = Integer.valueOf(list.get(i+1));
+				map.put(list.get(i),intValue);
+			}*/
+		}
+		//System.out.print(map);
+		fr.close();
+		return map;
+	}
+
+}

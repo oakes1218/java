@@ -1,0 +1,15 @@
+
+public class Player {	
+	int line = 0;
+	int count = 0;
+	Picture pi = new Picture();
+	//public String[] c;
+	public Player(int line , int count, Object pi){
+		
+		this.pi = this.pi;
+		this.line = line;
+		this.count = count;
+	}
+	
+	
+}

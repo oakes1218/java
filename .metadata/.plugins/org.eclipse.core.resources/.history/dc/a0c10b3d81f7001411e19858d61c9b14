@@ -1,0 +1,31 @@
+import java.util.Scanner ;
+public class GuessGame {
+	public static void main (String[] args){
+		
+		Scanner input = new Scanner(System.in);
+		int number = (int) (Math.random() * 100)+1 ;
+		int guess = input.nextInt();
+		System.out.println(guess);
+		while(guess != number){
+			if(number>100){
+				continue;
+			}	
+			if(number<=0){
+				break;
+			}	
+			if(number>guess){
+				System.out.println("Too Big");
+			}
+			if(number<guess){
+				System.out.println("Too Small");
+			}
+		}
+			if(number==guess){
+				System.out.println("Bingo");
+			}else{
+				System.out.println("Give up");
+			}
+			
+	}
+
+}

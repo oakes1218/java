@@ -1,0 +1,15 @@
+
+public class Play {
+	public static void main (String []arge){	
+		
+		
+		//Twentyone to = new Twentyone();
+		//to.deal();
+		Bingo con = new Bingo();
+		
+		//con.Conparison();
+		//con.Initial();
+		con.Game();
+		//con.Initial();
+	}
+}

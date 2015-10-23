@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Homework&apos; to &apos;StringReverse&apos;&#x0A;- Original project: &apos;Javawork&apos;&#x0A;- Original element: &apos;Homework&apos;&#x0A;- Renamed element: &apos;StringReverse&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Homework&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Homework.java[Homework" matchStrategy="1" name="StringReverse" qualified="false" references="true" similarDeclarations="false" stamp="1434439838657" textual="false" version="1.0"/>
+</session>

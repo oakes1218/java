@@ -1,0 +1,78 @@
+package Grade;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.ObjectOutputStream.PutField;
+import java.security.PublicKey;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Readfile implements IStudent {
+	
+	ArrayList<String> Id_list = new ArrayList<String>();
+	ArrayList<String> Name_list = new ArrayList<String>();
+	ArrayList<String> Score_list = new ArrayList<String>();
+	//HashMap<String, Integer> map = new HashMap<String, Integer>();
+	String line ;
+	String name ;
+	
+	public void Read() throws IOException {
+		
+		FileReader fr = new FileReader("/Users/eddie/Downloads/grade1.txt");
+		BufferedReader br = new BufferedReader(fr);
+		
+		while ((line = br.readLine()) != null){
+			
+			String[] d = line.split(",");
+			Id_list.add(d[0]);
+			Name_list.add(d[1]);
+			Score_list.add(d[2]);
+			//map.put(d[0],Integer.valueOf(d[1]));
+			
+		}
+		System.out.println(Id_list);
+		System.out.println(Name_list.get(5));
+		System.out.println(Score_list);
+		System.out.println(this.getId());
+		fr.close();
+		//return map;
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setName(String name) {
+			
+	}
+
+	@Override
+	public Integer getScore() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setScore(Integer score) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Integer getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setId(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
