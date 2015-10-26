@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="Twentyone"/>
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 <fullyQualifiedTypeName name="Bingo"/>
 <fullyQualifiedTypeName name="Remove"/>
-<fullyQualifiedTypeName name="java.lang.Void"/>
 <fullyQualifiedTypeName name="Role"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.MediaSize.Engineering"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -29,7 +27,6 @@
 <fullyQualifiedTypeName name="Picture"/>
 <fullyQualifiedTypeName name="Player"/>
 <fullyQualifiedTypeName name="javax.xml.soap.Detail"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
@@ -41,14 +38,12 @@
 <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.security.PublicKey"/>
 <fullyQualifiedTypeName name="Grade.Readfile"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="Grade.Studen"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="Grade.IStudent"/>
 <fullyQualifiedTypeName name="Grade.Student"/>
 <fullyQualifiedTypeName name="java.text.DateFormat"/>
@@ -57,7 +52,12 @@
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Park.Parking"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="java.security.PublicKey"/>
+<fullyQualifiedTypeName name="java.util.concurrent.CountDownLatch"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
