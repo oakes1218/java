@@ -44,70 +44,85 @@ public class Comparison {
 		sixth_List.add("326");
 		
 		number = scanner.next();
-		
-		//number.substring(1);
-		/*int after_Convert = Integer.parseInt(number);
-		after_Convert = after_Convert%10000000;
-		String frist_Number = String.valueOf(after_Convert); //七碼 ４Ｗ
-		after_Convert = after_Convert%1000000;
-		String second_Number = String.valueOf(after_Convert); //六碼 １Ｗ
-		after_Convert = after_Convert%100000;
-		String third_Number = String.valueOf(after_Convert); //五碼 ４０００
-		after_Convert = after_Convert%10000;
-		String fourth_Number = String.valueOf(after_Convert); //四碼 １０００
-		after_Convert = after_Convert%1000;
-		String fifth_Number = String.valueOf(after_Convert); //三碼 ２００*/
+		int afterConvert = Integer.parseInt(number);
+		afterConvert = afterConvert%10000000;
+		String frist_Number = String.valueOf(afterConvert); //七碼 ４Ｗ
+		afterConvert = afterConvert%1000000;
+		String second_Number = String.valueOf(afterConvert); //六碼 １Ｗ
+		afterConvert = afterConvert%100000;
+		String third_Number = String.valueOf(afterConvert); //五碼 ４０００
+		afterConvert = afterConvert%10000;
+		String fourth_Number = String.valueOf(afterConvert); //四碼 １０００
+		afterConvert = afterConvert%1000;
+		String fifth_Number = String.valueOf(afterConvert); //三碼 ２００
 		
 		for (int i = 0 ; i < special_List.size() ; i++){
 			if(number.equals(special_List.get(i))){
 			System.out.println("中獎1千萬");
-			return;
+			break;
+			}else {
+				break;
 			}
 		} 
 		
 		for (int i = 0 ; i < twomillion_List.size() ; i++){
 			if(number.equals(twomillion_List.get(i))){
 			System.out.println("中獎200萬");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
 		for (int i = 0 ; i < twohundredthousand_List.size() ; i++){
 			if(number.equals(twohundredthousand_List.get(i))){
 			System.out.println("中獎20萬");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
 		for (int i = 0 ; i < second_List.size() ; i++){
-			if(number.substring(1).equals(second_List.get(i))){
+			if(frist_Number.equals(second_List.get(i))){
 			System.out.println("中獎４萬");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
 		for (int i = 0 ; i < third_List.size() ; i++){
-			if(number.substring(2).equals(third_List.get(i))){
+			if(second_Number.equals(third_List.get(i))){
 			System.out.println("中獎１萬");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
 		for (int i = 0 ; i < fourth_List.size() ; i++){
-			if(number.substring(3).equals(fourth_List.get(i))){
+			if(third_Number.equals(fourth_List.get(i))){
 			System.out.println("中獎4000");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
 		for (int i = 0 ; i < fourth_List.size() ; i++){
-			if(number.substring(4).equals(fourth_List.get(i))){
+			if(fourth_Number.equals(fourth_List.get(i))){
 			System.out.println("中獎1000");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
 		for (int i = 0 ; i < sixth_List.size() ; i++){
-			if(number.substring(5).equals(sixth_List.get(i))){
+			if(fifth_Number.equals(sixth_List.get(i))){
 			System.out.println("中獎200");
-			return;
+			break;
+			}else {
+				break;
 			}
 		}
-		System.out.println("槓龜");
-	
+		
+		//System.out.print(frist_Number + " " + second_Number + " " + third_Number + " " + fourth_Number + " " + fifth_Number);
+		
 	}
 }

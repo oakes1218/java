@@ -44,9 +44,7 @@ public class Comparison {
 		sixth_List.add("326");
 		
 		number = scanner.next();
-		
-		//number.substring(1);
-		/*int after_Convert = Integer.parseInt(number);
+		int after_Convert = Integer.parseInt(number);
 		after_Convert = after_Convert%10000000;
 		String frist_Number = String.valueOf(after_Convert); //七碼 ４Ｗ
 		after_Convert = after_Convert%1000000;
@@ -56,7 +54,7 @@ public class Comparison {
 		after_Convert = after_Convert%10000;
 		String fourth_Number = String.valueOf(after_Convert); //四碼 １０００
 		after_Convert = after_Convert%1000;
-		String fifth_Number = String.valueOf(after_Convert); //三碼 ２００*/
+		String fifth_Number = String.valueOf(after_Convert); //三碼 ２００
 		
 		for (int i = 0 ; i < special_List.size() ; i++){
 			if(number.equals(special_List.get(i))){
@@ -78,36 +76,37 @@ public class Comparison {
 			}
 		}
 		for (int i = 0 ; i < second_List.size() ; i++){
-			if(number.substring(1).equals(second_List.get(i))){
+			if(frist_Number.equals(second_List.get(i))){
 			System.out.println("中獎４萬");
 			return;
 			}
 		}
 		for (int i = 0 ; i < third_List.size() ; i++){
-			if(number.substring(2).equals(third_List.get(i))){
+			if(second_Number.equals(third_List.get(i))){
 			System.out.println("中獎１萬");
 			return;
 			}
 		}
 		for (int i = 0 ; i < fourth_List.size() ; i++){
-			if(number.substring(3).equals(fourth_List.get(i))){
+			if(third_Number.equals(fourth_List.get(i))){
 			System.out.println("中獎4000");
 			return;
 			}
 		}
 		for (int i = 0 ; i < fourth_List.size() ; i++){
-			if(number.substring(4).equals(fourth_List.get(i))){
+			if(fourth_Number.equals(fourth_List.get(i))){
 			System.out.println("中獎1000");
 			return;
 			}
 		}
 		for (int i = 0 ; i < sixth_List.size() ; i++){
-			if(number.substring(5).equals(sixth_List.get(i))){
+			if(fifth_Number.equals(sixth_List.get(i))){
 			System.out.println("中獎200");
 			return;
 			}
 		}
 		System.out.println("槓龜");
-	
+		//System.out.print(frist_Number + " " + second_Number + " " + third_Number + " " + fourth_Number + " " + fifth_Number);
+		
 	}
 }
