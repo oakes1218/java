@@ -1,0 +1,63 @@
+package Invoice;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Comparison {
+	ArrayList<String> special_List = new ArrayList<String>();
+	ArrayList<String> twomillion_List = new ArrayList<String>();
+	ArrayList<String> twohundredthousand_List = new ArrayList<String>();
+	ArrayList<String> frist_List = new ArrayList<String>();
+	ArrayList<String> second_List = new ArrayList<String>();
+	ArrayList<String> third_List = new ArrayList<String>();
+	ArrayList<String> fourth_List = new ArrayList<String>();
+	ArrayList<String> fifth_List = new ArrayList<String>();
+	ArrayList<String> sixth_List = new ArrayList<String>();
+	//HashMap<String, Integer> map = new HashMap<String, Integer>();
+	
+	Scanner scanner = new Scanner(System.in);
+	int number ; 
+	
+	public void comparison_Invoice () {
+		
+		System.out.print("請輸入兌獎號碼：");
+		special_List.add("54719495");
+		twomillion_List.add("52704456");
+		twohundredthousand_List.add("95358086");
+		twohundredthousand_List.add("35867930");
+		twohundredthousand_List.add("14013695");
+		frist_List.add("5358086");
+		frist_List.add("5867930");
+		frist_List.add("4013695");
+		second_List.add("358086");
+		second_List.add("867930");
+		second_List.add("013695");
+		third_List.add("58086");
+		third_List.add("67930");
+		third_List.add("13695");
+		fourth_List.add("8086");
+		fourth_List.add("7930");
+		fourth_List.add("3695");
+		sixth_List.add("086");
+		sixth_List.add("930");
+		sixth_List.add("695");
+		sixth_List.add("270");
+		sixth_List.add("432");
+		sixth_List.add("326");
+		for (int i = 0 ; i <= sixth_List.size() ; i++){
+			System.out.print(sixth_List.get(i));
+		}
+		number = scanner.nextInt();
+		number = number%10000000;
+		number = number%1000000;
+		number = number%100000;
+		number = number%10000;
+		number = number%1000;
+		String.valueOf(number);
+		
+		//System.out.print(number);
+		//System.out.println(sixth_List.contains(number));
+		
+	}
+}
