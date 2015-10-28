@@ -84,28 +84,28 @@ public class Comparison {
 			return;
 			}
 		}
-		String second_Number = number.substring(2);
+		String second_Number = number.substring(1);
 		for (int i = 0 ; i < third_List.size() ; i++){
 			if(second_Number.equals(third_List.get(i))){
 			System.out.println("中獎１萬");
 			return;
 			}
 		}
-		String third_Number = number.substring(3);
+		String third_Number = number.substring(1);
 		for (int i = 0 ; i < fourth_List.size() ; i++){
 			if(third_Number.equals(fourth_List.get(i))){
 			System.out.println("中獎4000");
 			return;
 			}
 		}
-		String fourth_Number = number.substring(4);
+		String fourth_Number = number.substring(1);
 		for (int i = 0 ; i < fourth_List.size() ; i++){
 			if(fourth_Number.equals(fourth_List.get(i))){
 			System.out.println("中獎1000");
 			return;
 			}
 		}
-		String fifth_Number = number.substring(5);
+		String fifth_Number = number.substring(1);
 		for (int i = 0 ; i < sixth_List.size() ; i++){
 			if(fifth_Number.equals(sixth_List.get(i))){
 			System.out.println("中獎200");
