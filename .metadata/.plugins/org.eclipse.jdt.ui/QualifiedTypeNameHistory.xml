@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="Bingo"/>
-<fullyQualifiedTypeName name="Remove"/>
-<fullyQualifiedTypeName name="Role"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.MediaSize.Engineering"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtPackage.AddressHelper"/>
@@ -30,7 +27,6 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.lang.LinkageError"/>
 <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
 <fullyQualifiedTypeName name="java.io.ObjectOutputStream.PutField"/>
@@ -58,6 +54,10 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="Invoice.Comparison"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.net.HttpURLConnection"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>

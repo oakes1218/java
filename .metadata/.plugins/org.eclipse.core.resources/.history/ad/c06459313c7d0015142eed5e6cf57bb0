@@ -1,0 +1,15 @@
+package Jsonpractice;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class JsonFormRead {
+	public static void main (String [] ager) throws IOException{
+		
+		//String yourJsonStringUrl = "http://data.taipei.gov.tw/opendata/apply/json/QTdBNEQ5NkQtQkM3MS00QUI2LUJENTctODI0QTM5MkIwMUZE";
+		URL url = new URL ("http://data.taipei.gov.tw/opendata/apply/json/QTdBNEQ5NkQtQkM3MS00QUI2LUJENTctODI0QTM5MkIwMUZE");
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+		//String NAME = JSONObject ()
+	}
+}
