@@ -48,7 +48,7 @@ public class JsonFormRead {
             	//System.out.print(list);
             	String vaule = jsonObject.get("name").toString();
             	
-            	if (list.contains(name)) {
+            	if (vaule.contains(name)) {
             		System.out.println("名字：" + jsonObject.get("name"));
              		System.out.println("地址：" + jsonObject.get("display_addr"));
              		System.out.println("電話：" + jsonObject.get("tel"));

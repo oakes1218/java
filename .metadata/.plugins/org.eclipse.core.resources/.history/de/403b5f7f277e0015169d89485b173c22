@@ -8,8 +8,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.function.Consumer;
-
 import org.json.JSONObject;
 import org.json.JSONArray;
 
@@ -33,7 +31,7 @@ public class JsonFormRead {
         reader.close();
        
         JSONArray jsonArray = new JSONArray(jsonString);
-        //JSONObject jsonObject = new JSONObject();
+        JSONObject jsonObject = new JSONObject();
        
         while (Flag) {
         	
@@ -41,26 +39,20 @@ public class JsonFormRead {
          	name = scanner.next();
          	
         	for (int i = 0 ; i < jsonArray.length() ; i++ ){
-        		JSONObject jsonObject = jsonArray.getJSONObject(i);   
+            	jsonObject = jsonArray.getJSONObject(i);   
             	//System.out.println(jsonObject.get("name"));            	
             	//System.out.println(name.equals(jsonObject.get("name")));
             	list.add(jsonObject);
-            	//System.out.print(list);
-            	String vaule = jsonObject.get("name").toString();
-            	
-            	if (list.contains(name)) {
+            	System.out.print(list);
+            	if(list.contains(name))	
+            	/*if(name.equals(jsonObject.get("name")))*/{
             		System.out.println("名字：" + jsonObject.get("name"));
              		System.out.println("地址：" + jsonObject.get("display_addr"));
              		System.out.println("電話：" + jsonObject.get("tel"));
-            	}
+             		Flag = false;
+             	}
+            	
         	}
-        	/*if(true)	
-        	if(name.equals(jsonObject.get("name"))){ 
-        		System.out.println("名字：" + jsonObject.get("name"));
-         		System.out.println("地址：" + jsonObject.get("display_addr"));
-         		System.out.println("電話：" + jsonObject.get("tel"));
-         		Flag = false;
-         	}*/
         	
 		}
        
