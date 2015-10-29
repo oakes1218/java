@@ -1,0 +1,35 @@
+package Jsonpractice;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import org.json.JSONObject;
+import org.json.JSONArray;
+
+public class JsonFormRead {
+
+	public static void main (String[] args) throws IOException{
+		
+		URL url = new URL ("http://data.taipei.gov.tw/opendata/apply/json/QTdBNEQ5NkQtQkM3MS00QUI2LUJENTctODI0QTM5MkIwMUZE");
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+		BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"));
+        String jsonString = reader.readLine();
+        reader.close();
+       
+        JSONArray jsonArray = new JSONArray(jsonString);
+        JSONObject jsonObject = new JSONObject();
+        //jsonObject.put("name", "display_addr");
+        for (int i = 0 ; i <= jsonArray.length() ; i++ ){
+        	jsonObject = jsonArray.getJSONObject(i);   
+        	System.out.println(jsonObject);
+        }
+        //System.out.println(jsonObject);
+        System.out.println(jsonArray);
+        //System.out.println(jsonObject);
+		//String NAME = jsonArray.get(0).getJSONObject("name");
+        
+	}
+
+}
