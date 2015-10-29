@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
+
+import jdk.nashorn.internal.ir.Flags;
+
 import org.json.JSONObject;
 import org.json.JSONArray;
 
@@ -14,13 +17,14 @@ import org.json.JSONArray;
 
 public class JsonFormRead {
 	
-	//private static Scanner scanner;
+	private static Scanner scanner;
 
 	public static void main (String[] args) throws IOException{
-		Scanner scanner = new Scanner(System.in);
-		String name ;
-		boolean Flag = true;
-		
+		scanner = new Scanner(System.in);
+		//StringBuffer sb = new StringBuffer();
+		int count = 0 ;
+		boolean Flags = true;
+		//Pattern pattern = Pattern.compile(sb); 
 		URL url = new URL ("http://data.taipei.gov.tw/opendata/apply/json/QTdBNEQ5NkQtQkM3MS00QUI2LUJENTctODI0QTM5MkIwMUZE");
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"));
@@ -30,23 +34,28 @@ public class JsonFormRead {
         JSONArray jsonArray = new JSONArray(jsonString);
         JSONObject jsonObject = new JSONObject();
        
-        while (Flag) {
+        while (Flags) {
         	
             System.out.println("請輸入飯店名稱：");
-         	name = scanner.next();
+         	scanner.next();
          	
         	for (int i = 0 ; i < jsonArray.length() ; i++ ){
             	jsonObject = jsonArray.getJSONObject(i);   
-            	//System.out.println(jsonObject.get("name"));            	
-            	//System.out.println(name.equals(jsonObject.get("name")));
-            	if(name.equals(jsonObject.get("name"))){
-             		System.out.println(jsonObject);
-             		Flag = false;
-             	}
-        	}
+            	//System.out.println(jsonObject);
+            	//System.out.print(jsonObject.get("name"));            	
+            	count ++;
+            	if(scanner.next().equals(jsonObject.get("name"))){
+            		System.out.println(count);
+	        		System.out.println(jsonString);
+	        		Flags = false;
+            	}
+            	
+            }
+        	//System.out.print(jsonObject.get("name"));
         	
+        	System.out.println(count);
 		}
-       
+        
 	}
 
 }

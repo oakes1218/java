@@ -19,8 +19,9 @@ public class JsonFormRead {
 	public static void main (String[] args) throws IOException{
 		Scanner scanner = new Scanner(System.in);
 		String name ;
+		//StringBuffer sb = new StringBuffer();
 		boolean Flag = true;
-		
+		//Pattern pattern = Pattern.compile(sb); 
 		URL url = new URL ("http://data.taipei.gov.tw/opendata/apply/json/QTdBNEQ5NkQtQkM3MS00QUI2LUJENTctODI0QTM5MkIwMUZE");
 		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 		BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"));
@@ -37,16 +38,21 @@ public class JsonFormRead {
          	
         	for (int i = 0 ; i < jsonArray.length() ; i++ ){
             	jsonObject = jsonArray.getJSONObject(i);   
-            	//System.out.println(jsonObject.get("name"));            	
-            	//System.out.println(name.equals(jsonObject.get("name")));
+            	//System.out.println(jsonObject);
+            	System.out.println(jsonObject.get("name"));            	
+            	
+            	//System.out.print(name.equals(jsonObject.get("name")));
             	if(name.equals(jsonObject.get("name"))){
-             		System.out.println(jsonObject);
-             		Flag = false;
-             	}
-        	}
+            		//System.out.println(count);
+	        		System.out.println(jsonString);
+	        		Flag = false;
+            	}
+            	
+            }
+        	//System.out.print(jsonObject.get("name"));
         	
 		}
-       
+        
 	}
 
 }
